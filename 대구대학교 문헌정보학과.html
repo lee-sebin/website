@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>대구대학교 문헌정보학과</title>
+<style>
+:root{--bg:#f4f9ff;--surface:#ffffff;--ink:#1d2b3c;--muted:#5c6b7d;--blue:#2f7de1;--blue-d:#1f5fb3;--sky:#e3f0ff;--sun:#ffb938;--mint:#2bb89a;--line:#dbe7f5;--shadow:0 6px 20px rgba(47,125,225,.10);color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Pretendard","Malgun Gothic","Apple SD Gothic Neo",sans-serif;line-height:1.7}
+header{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+.bar{max-width:1040px;margin:auto;padding:12px 18px}
+.brand{font-weight:800;font-size:1.1rem;color:var(--blue-d);margin-bottom:8px}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px}
+.tabs a{white-space:nowrap;text-decoration:none;color:var(--muted);background:var(--sky);padding:8px 16px;border-radius:999px;font-size:.92rem;font-weight:600;transition:.15s}
+.tabs a:hover{background:#cfe5ff}
+.tabs a.on{background:var(--blue);color:#fff}
+main{max-width:1040px;margin:auto;padding:28px 18px 56px}
+.view{display:none;animation:in .3s ease}
+.view.on{display:block}
+@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.hero{background:linear-gradient(135deg,#dff0ff,#fff4d9);border-radius:22px;padding:48px 28px;text-align:center;box-shadow:var(--shadow)}
+.hero small{color:var(--blue-d);font-weight:800;letter-spacing:.14em;font-size:.78rem}
+.hero h1{font-size:clamp(1.9rem,6vw,2.8rem);margin:.3em 0;color:var(--ink)}
+.hero p{max-width:540px;margin:0 auto;color:var(--muted)}
+h2{font-size:1.5rem;margin:0 0 6px;color:var(--blue-d)}
+.sub{color:var(--muted);margin:0 0 22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--shadow)}
+.card h3{margin:0 0 6px;font-size:1.02rem;color:var(--blue-d)}
+.card p{margin:0;color:var(--muted);font-size:.93rem}
+a.card{text-decoration:none;color:inherit;display:block;transition:.15s}
+a.card:hover{transform:translateY(-3px)}
+.ico{font-size:1.7rem;display:block;margin-bottom:6px}
+.pill{display:inline-block;background:var(--sky);color:var(--blue-d);border-radius:999px;padding:3px 12px;font-size:.78rem;font-weight:700;margin-bottom:8px}
+.book .pill{background:#fff1d1;color:#a56a00}
+.note{background:#fffaf0;border-left:4px solid var(--sun);padding:12px 16px;border-radius:8px;font-size:.88rem;color:var(--muted);margin-top:22px}
+.link{display:inline-block;margin-top:16px;background:var(--blue);color:#fff;text-decoration:none;padding:12px 26px;border-radius:999px;font-weight:700}
+.list{margin:0;padding-left:18px;color:var(--muted);font-size:.93rem}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 18px}
+</style>
+</head>
+<body>
+<header><div class="bar">
+<div class="brand">📚 대구대학교 문헌정보학과</div>
+<nav class="tabs">
+<a href="#home">홈</a><a href="#about">학과 소개</a><a href="#library">창파도서관</a><a href="#books">추천도서</a><a href="#career">진로 선택지</a><a href="#contact">문의</a>
+</nav></div></header>
+
+<main>
+<section class="view" id="v-home">
+<div class="hero"><small>DEPARTMENT OF LIBRARY &amp; INFORMATION SCIENCE</small>
+<h1>지식과 사람을 잇는 사람들</h1>
+<p>정보를 모으고, 정리하고, 필요한 사람에게 연결하는 문헌정보학. 아래 메뉴를 눌러 둘러보세요.</p></div>
+<div class="grid">
+<a class="card" href="#about"><span class="ico">🎓</span><h3>학과 소개</h3><p>문헌정보학은 어떤 학문일까요?</p></a>
+<a class="card" href="#library"><span class="ico">🏛️</span><h3>창파도서관</h3><p>경산캠퍼스의 학술정보원을 소개합니다.</p></a>
+<a class="card" href="#books"><span class="ico">📖</span><h3>추천도서</h3><p>문헌정보학도에게 어울리는 책들</p></a>
+<a class="card" href="#career"><span class="ico">🧭</span><h3>진로 선택지</h3><p>졸업 후 갈 수 있는 길</p></a>
+</div></section>
+
+<section class="view" id="v-about">
+<h2>학과 소개</h2><p class="sub">문헌정보학은 지식·정보의 수집, 조직, 저장, 검색, 제공 전 과정을 다루는 학문입니다.</p>
+<div class="grid">
+<div class="card"><span class="ico">🗂️</span><h3>정보 조직</h3><p>분류·목록·메타데이터로 방대한 정보를 체계적으로 정리합니다.</p></div>
+<div class="card"><span class="ico">🔎</span><h3>정보 검색</h3><p>필요한 정보를 정확하고 빠르게 찾는 방법을 익힙니다.</p></div>
+<div class="card"><span class="ico">🤝</span><h3>정보 서비스</h3><p>이용자의 요구를 이해하고 알맞은 자료와 서비스를 연결합니다.</p></div>
+<div class="card"><span class="ico">🏢</span><h3>도서관 경영</h3><p>공공·대학·학교·전문도서관의 운영과 기획을 이해합니다.</p></div>
+<div class="card"><span class="ico">💻</span><h3>디지털 정보</h3><p>데이터베이스와 디지털 아카이브 등 정보기술 활용 역량을 키웁니다.</p></div>
+</div>
+<div class="note">학과의 세부 교육과정·교수진 등 공식 정보는 대구대학교 홈페이지에서 확인해 주세요.</div>
+</section>
+
+<section class="view" id="v-library">
+<h2>창파도서관 (학술정보원)</h2><p class="sub">대구대학교 경산캠퍼스의 중앙도서관으로, 학생들의 학습과 문화 활동이 이루어지는 공간입니다.</p>
+<div class="grid">
+<div class="card"><span class="ico">📍</span><h3>위치</h3><p>경북 경산시 진량읍 대구대로 201, 대구대학교 경산캠퍼스</p></div>
+<div class="card"><span class="ico">🪑</span><h3>자유열람관</h3><p>창파도서관 안에 자유열람관이 마련되어 있습니다.</p></div>
+<div class="card"><span class="ico">🎄</span><h3>북(Book) 트리</h3><p>2008년부터 매년 폐기 예정 도서로 트리를 만들어 전시하는 전통이 있습니다.</p></div>
+<div class="card"><span class="ico">💼</span><h3>취업·진로 행사</h3><p>2025년 4월 ‘Dream Up JOB FESTA’ 취업박람회가 창파도서관에서 열렸습니다.</p></div>
+<div class="card"><span class="ico">⠿</span><h3>점자도서관</h3><p>경산캠퍼스에는 점자도서관도 운영되고 있습니다.</p></div>
+</div>
+<div class="note">개관시간, 대출·반납, 자료 검색 등 최신 이용 안내는 대구대학교 홈페이지에서 도서관 메뉴를 확인해 주세요.</div>
+</section>
+
+<section class="view book" id="v-books">
+<h2>추천도서</h2><p class="sub">책과 도서관, 정보와 지식을 다룬 작품들 — 문헌정보학도에게 어울리는 읽을거리입니다.</p>
+<div class="grid">
+<div class="card"><span class="pill">소설</span><h3>『장미의 이름』 — 움베르토 에코</h3><p>거대한 수도원 장서관을 무대로 한 추리소설. 지식을 지키려는 자와 알리려는 자의 이야기.</p></div>
+<div class="card"><span class="pill">소설</span><h3>『픽션들』 — 호르헤 루이스 보르헤스</h3><p>무한한 도서관을 상상한 「바벨의 도서관」이 실린 단편집.</p></div>
+<div class="card"><span class="pill">소설</span><h3>『화씨 451』 — 레이 브래드버리</h3><p>책을 불태우는 미래 사회에서 책과 지식의 의미를 묻는 고전.</p></div>
+<div class="card"><span class="pill">인문</span><h3>『독서의 역사』 — 알베르토 망구엘</h3><p>읽는다는 행위가 어떻게 변해 왔는지 살펴보는 독서 문화사.</p></div>
+<div class="card"><span class="pill">정보학</span><h3>『인포메이션』 — 제임스 글릭</h3><p>정보란 무엇인지, 인류의 정보 이야기를 따라가는 교양서.</p></div>
+<div class="card"><span class="pill">에세이</span><h3>『서재 결혼시키기』 — 앤 패디먼</h3><p>책을 사랑하는 사람들의 유쾌한 책 에세이.</p></div>
+</div>
+<div class="note">일반 추천 목록입니다. 소장 여부와 대출 가능 여부는 도서관 자료 검색에서 확인하세요.</div>
+</section>
+
+<section class="view" id="v-career">
+<h2>졸업 후 진로 선택지</h2><p class="sub">정보가 있는 곳이라면 어디든 문헌정보학 전공자의 무대가 될 수 있습니다.</p>
+<div class="grid">
+<div class="card"><span class="ico">📚</span><h3>도서관 사서</h3><p>공공도서관, 대학도서관, 학교도서관, 전문도서관 등에서 자료와 이용자를 연결합니다.</p></div>
+<div class="card"><span class="ico">🏫</span><h3>사서교사</h3><p>학교도서관에서 독서·정보활용 교육을 담당합니다. 교직 관련 별도 요건이 필요합니다.</p></div>
+<div class="card"><span class="ico">🗄️</span><h3>기록물 관리</h3><p>공공기관·기업의 기록관과 아카이브에서 기록을 보존하고 서비스합니다.</p></div>
+<div class="card"><span class="ico">🏛️</span><h3>공공기관·공무원</h3><p>도서관·문화·정보 분야 공공기관과 사서직 공무원 등을 준비할 수 있습니다.</p></div>
+<div class="card"><span class="ico">🧮</span><h3>데이터·정보 관리</h3><p>데이터베이스, 지식관리, 메타데이터 업무 등 정보 산업 분야로 진출합니다.</p></div>
+<div class="card"><span class="ico">📝</span><h3>출판·콘텐츠</h3><p>출판, 북큐레이션, 콘텐츠 기획 등 책과 이야기를 다루는 분야.</p></div>
+<div class="card"><span class="ico">🎓</span><h3>대학원 진학·연구</h3><p>문헌정보학 및 관련 분야 연구자의 길을 선택할 수 있습니다.</p></div>
+</div>
+<div class="note">자격 취득과 채용 요건은 관련 법령과 기관별 공고에 따라 다르니 반드시 최신 정보를 확인하세요.</div>
+</section>
+
+<section class="view" id="v-contact">
+<h2>문의</h2><p class="sub">대구대학교 문헌정보학과</p>
+<div class="grid">
+<div class="card"><span class="ico">📍</span><h3>주소</h3><p>경북 경산시 진량읍 대구대로 201<br>대구대학교 경산캠퍼스</p></div>
+<div class="card"><span class="ico">🌐</span><h3>대구대학교 홈페이지</h3><p>학과·입학·도서관 공식 정보는 홈페이지에서 확인하세요.</p></div>
+</div>
+<a class="link" href="https://www.daegu.ac.kr/main" target="_blank" rel="noopener">대구대학교 홈페이지 바로가기 ↗</a>
+</section>
+</main>
+<footer>© 대구대학교 문헌정보학과 소개 페이지 (비공식 소개용)</footer>
+
+<script>
+(function(){
+var names=['home','about','library','books','career','contact'];
+function show(){
+var h=(location.hash||'').replace('#','');
+if(names.indexOf(h)<0)h='home';
+names.forEach(function(n){
+var v=document.getElementById('v-'+n);if(v)v.classList.toggle('on',n===h);
+});
+document.querySelectorAll('.tabs a').forEach(function(a){
+a.classList.toggle('on',a.getAttribute('href')==='#'+h);
+});
+window.scrollTo(0,0);
+}
+window.addEventListener('hashchange',show);
+show();
+})();
+</script>
+</body>
+</html>
